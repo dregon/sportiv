@@ -1,0 +1,24 @@
+<h1>Comentarios</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Comentario</th>
+    <th>Categoria</th>
+  </tr>
+
+<% @comentarios.each do |comentario| %>
+  <tr>
+    <td id="comTitulo"><%= comentario.titulo %></td>
+    <td id="comDesc"><%= comentario.descripcion %></td>
+    <td id="comCate"><%= comentario.categoria.titulo %></td>
+    <td><%= link_to 'Mostrar', comentario %></td>
+    <td><%= link_to 'Editar', edit_comentario_path(comentario) %></td>
+    <td><%= link_to 'Eliminar', comentario, confirm: 'Esta seguro?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo Comentario', new_comentario_path %>

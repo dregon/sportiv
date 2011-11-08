@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+*/
+
+
+
+#general{
+width: 960px;
+margin: 0px;
+position:relative;
+left:100px;
+}
+
+#menu{
+margin: 0px;
+height:30px;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(104,104,104,1) 99%, rgba(102,102,102,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(99%,rgba(104,104,104,1)), color-stop(100%,rgba(102,102,102,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(104,104,104,1) 99%,rgba(102,102,102,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(104,104,104,1) 99%,rgba(102,102,102,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(104,104,104,1) 99%,rgba(102,102,102,1) 100%); /* IE10+ */
+background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(104,104,104,1) 99%,rgba(102,102,102,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#666666',GradientType=0 ); /* IE6-9 */
+}
+
+#logo{
+margin-bottom: 15px;
+margin-top: 0px;
+}
+
+#espacio{
+margin: 15px;
+}
+
+h1{
+background-color:#b00;
+color:#fff;
+}
+
+#limpiado{
+clear:both;
+}
+
+#primerColumna{
+width: 310px;
+margin: 0px;
+}
+
+#segundaColumna{
+width: 310px;
+margin: 0px;
+position:absolute;
+right:320px;
+top:204px;
+}
+
+#tercerColumna{
+width: 310px;
+margin: 0px;
+position:absolute;
+right:0px;
+top:204px;
+border:1px solid #ddd;
+}
+
+#tipoUno{
+border-bottom: 1px solid #ddd;
+}
+
+#comTitulo{
+width:150px;
+}
+
+#comDesc{
+width:350px;
+}
+
+#comCate{
+width:100px;
+}
+
+td{
+border-bottom: 1px solid #ddd;
+}
+
+th{
+border: 1px solid #aaa;
+}

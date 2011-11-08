@@ -1,0 +1,24 @@
+<div id="cuerpo">
+<div id="espacio">
+	<h3>Top 10 de comentarios</h3>
+</div>
+
+ <% @noticias = Comentario.find(:all, :limit => 10, :order => "created_at ASC") %>
+<ul>
+<% @noticias.each do |noticia| %>
+   <li>
+      <b> <%= link_to noticia.titulo, noticia%> </b> <br />
+      
+      <% if !noticia.categoria.blank? %>
+      <i><%= link_to noticia.categoria.titulo, noticia %></i> <br />
+      <% end %>
+      
+      Comentario:<%= noticia.descripcion.truncate(150, :omission => "...")%>
+      <%= link_to "leer mas...", noticia %> <br />
+      <%= noticia.created_at.strftime("%e/%m/%Y") %> <br />
+      <br />
+   </li>   
+<% end %>
+</ul>
+</div>
+<div id="limpiado"></div>

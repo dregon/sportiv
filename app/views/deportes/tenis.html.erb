@@ -1,0 +1,59 @@
+<h1>Tenis</h1>
+
+<div id="primerColumna">
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Sin fin a la historia", comentarios_path %>
+		</div>
+		<%= image_tag "t1.jpg", :size => "300x300" %>
+		<p>El sindicato de jugadores de la ATP ultima una amenaza que quiere acabar, como ya han logrado la UEFA y el 
+		COI, con el doble sistema impositivo que hay en Gran Bretaña con los ingresos de los deportistas. La decisión 
+		apunta a la joya de la corona: un boicot a la próxima edición de Wimbledon y, por extensión, a los otros dos 
+		torneos que se celebran en suelo británico, Nottingham y Queens.</p>
+	</div><br />
+	
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Duelo de grandes", comentarios_path %>
+		</div>
+		<%= image_tag "t2.jpg", :size => "300x300" %>
+		<p>María Sharapova, número 2 del mundo, afronta el WTA Championships encantada por volver a estar entre las ocho 
+		mejores del mundo y aseguró que arrebatar el liderato mundial a Caroline Wozniacki -algo que conseguirá si gana 
+		en Estanmbul- no es ahora mismo su objetivo.</p>
+	</div><br />
+			
+</div>
+
+<div id="limpiado">
+</div>
+
+<div id="segundaColumna">
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Dentro del top-20", comentarios_path %>
+		</div>
+		<%= image_tag "t3.jpg", :size => "300x200" %>
+		<p>Feliciano López ha logrado entrar en el 'Top-20' e igualar la mejor clasificación de su carrera en el ranking 
+		de la ATP, que sigue liderando con solidez el serbio Novak Djokovic.</p>
+	</div><br />
+	
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Fuera del Grand Slam y Masters!", comentarios_path %>
+		</div>
+		<%= image_tag "t4.jpg", :size => "300x300" %>
+		<p>Fuera de Grand Slam y Masters 1.000 -torneos obligatorios del circuito- pocos eventos pueden presumir de 
+		tener a tres de los cuatro mejores jugadores del mundo. El Mubadala World Tennis Championship de Abu Dhabi lo ha 
+		conseguido de nuevo. El torneo de exhibición a celebrar en el Zayed Sports City del 29 al 31 de diciembre, 
+		contará con un cartel de lujo formado por Novak Djokovic, Rafael Nadal, Roger Federer, David Ferrer, Jo-Wilfred 
+		Tsonga y Gäel Monfils.</p>
+	</div><br />
+	
+</div>
+
+<div id="limpiado">
+</div>
+
+<div id="tercerColumna">
+   <%= render "compartido/ultimos_comentarios"%>
+</div>

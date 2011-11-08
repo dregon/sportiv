@@ -1,0 +1,62 @@
+<h1>Motor</h1>
+
+<div id="primerColumna">
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Un minuto de silencio", comentarios_path %>
+		</div>
+		<%= image_tag "m1.jpg", :size => "300x150" %>
+		<p>El piloto Marco Simoncelli, de 24 años, ha muerto tras el grave accidente que sufrió en el Gran Premio de 
+		Malasia de MotoGP, que se ha cancelado tras el incidente. El italiano se fue al suelo en una curva al inicio de 
+		la carrera y fue atropellado por Colin Edwards y Valentino Rossi.</p>
+	</div><br />
+	
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Disputa interna", comentarios_path %>
+		</div>
+		<%= image_tag "m2.jpg", :size => "250x300" %>
+		<p>Fausto Gresini, dueño del San Carlo Gresini en el que corría el malogrado Marco Simoncelli, tiene decidido 
+		que su equipo no corra en el Gran Premio de la Comunidad Valenciana ni realice los tests de postemporada los 
+	    días siguientes. "Mi equipo no participará en el próximo Gran Premio en Valencia, o en las pruebas programadas 
+	    días después de la carrera", confesó Gresini en una entrevista concedida a GPone.</p>
+	</div><br />
+			
+</div>
+
+<div id="limpiado">
+</div>
+
+<div id="segundaColumna">
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Jarro de agua fría", comentarios_path %>
+		</div>
+		<%= image_tag "m3.jpg", :size => "300x200" %>
+		<p>No hubo campeón. Nico Terol lo tenía todo en su mano para alzarse con la 
+		corona, pero no pudo ser. Una última vuelta traicionera le dejó sin opciones después de que su moto se 
+		encabritara y estuviera a punto de tirarlo. Nico salvó la caída pero en su regreso a pista Zarco ya iba muy por 
+		delante, lo suficiente para no poderlo dar caza. Sólo tenía que quedar delante de él para ser campeón. Ahora, 
+		con 20 puntos de ventaja, se la tendrá que jugar en casa.</p>
+	</div><br />
+	
+	<div id="tipoUno">
+		<div id= "encabezado">
+			<%= link_to "Catástrofe sobre el pavimento", comentarios_path %>
+		</div>
+		<%= image_tag "m4.jpg", :size => "300x200" %>
+		<p>Aquel día de 2003 lucía el sol. Era 6 de abril. Pero por ningún lado aparecía la primavera. La noria de  
+		Suzuka estaba dormida. Un símbolo de condolencia. Daijiro Kato agonizaba en la clínica del circuito japonés. Al 
+		otro lado de la pista, los operarios aún recogían los últimos episodios del drama. Había sangre tatuada en el 
+		asfalto. Y en las escaleras de la clínica móvil.</p>
+	</div><br />
+	
+</div>
+
+<div id="limpiado">
+</div>
+
+<div id="tercerColumna">
+   <%= render "compartido/ultimos_comentarios"%>
+</div>
+

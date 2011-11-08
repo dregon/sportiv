@@ -1,0 +1,20 @@
+<h1>Categorias</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td id="comTitulo"><%= categoria.titulo %></td>
+    <td><%= link_to 'Mostrar', categoria %></td>
+    <td><%= link_to 'Editar', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Eliminar', categoria, confirm: 'Esta seguro?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nueva Categoria', new_categoria_path %>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sportiv</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+
+
+<div id="general">
+	
+	<div id="logo">
+		<%= link_to (image_tag "logo.png", :size => "272x68"), root_path %>
+	</div>
+
+	<div id="menu">
+	    <%= link_to "Inicio", root_path%>
+	    <%= link_to "Futbol", futbol_path%>
+	    <%= link_to "Motor", motor_path%>
+	    <%= link_to "Tenis", tenis_path%>
+	    <%= link_to "Baloncesto", baloncesto_path%>
+	    <%= link_to "Comentarios", comentarios_path%>
+	    <%= link_to "Categorias", categorias_path%>
+	</div>
+	
+	<div id="limpiado"></div>
+	
+   <%= yield %>
+</div>
+
+</body>
+</html>
